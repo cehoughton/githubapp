@@ -1,11 +1,15 @@
-
+// var getRepos = require('./../js/github.js').getRepos;
 var apiKey = require('./../.env').apiKey;
 
 
- $(function(){
-  $.get('https://api.github.com/users/' + username '/repos?access_token=' + apiKey + '&per_page=100').then(function(response){
-    console.log(response);
-  }).fail(function(error){
-    console.log(error.responseJSON.message);
+$(function() {
+  $('#repo').click(function() {
+    var ghrepo = $('#username').val();
+    $('#username').val("");
+
+    // event.preventDefault();
+    $.get('https://api.github.com/users/' + ghrepo + '?access_token=' + apiKey).then(function(response) {
+      console.log(response);
   });
-};
+});
+});
