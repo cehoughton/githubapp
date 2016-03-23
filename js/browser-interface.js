@@ -6,9 +6,9 @@ $(function() {
   $('#repo').submit(function(event) {
     event.preventDefault();
     var ghrepo = $('#username').val();
-    $('#username').val("");
-    getRepos();
-    $('.showRepo').text("Here is" + ghrepo);
+    //$('#username').val("");
+    getRepos(ghrepo);
+
 
 
   });
