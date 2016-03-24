@@ -6,21 +6,21 @@
     <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <title>Github API App</title>
+    <title>GithubApp</title>
   </head>
   <body>
-    <h1> Github API </h1>
-    <div class="form-group">
-  <form id="repo">
-      <label for="username">Enter a single Github username below and click the button to display profile.</label>
-    <input type="text" name="username" id="username" class="form-control">
+
+      <h1> GithubApp </h1>
+    <div class="container">
+      <h1>Enter a single Github username below and click the button to display profile</h1>
+      <input class="input form-control" name="username" id="username">
+     <button name="username" id="repo" type="button" class="btn btn-primary">OK</button>
   </div>
-    <button type="submit" class="btn btn-primary">OK</button>
-  </form>
+  <br>
+  <br>
+  <div class="row text-center">
+    <div class="col-md-6 left-side"><h4>Repo Name</h4><ol id="repoName"></ol></div>
+    <div class="col-md-6 right-side"><h4>Repo Description</h4><ol id="showRepo"></ol></div>
   </div>
-    <ol>
-    <div class="showRepo"></div>
-    <div id="repoName"></div>
-  </ol>
   </body>
 </html>

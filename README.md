@@ -20,11 +20,28 @@ You will need the following things properly installed on your computer.
 * change into the new directory
 * `npm install`
 * `bower install`
+* `gulp build`
 
 ## Running / Development
 
 * `gulp serve`
 * Visit your app at [http://localhost:3000](http://localhost:3000).
+
+## Known Bugs
+
+_This app requires the use of an API key.
+
+ To generate an api key on github, go to the settings page from your account home. Select Personal Access Tokens from the sidebar on the left, and click the Generate New Token button in the upper-right. Don't check any of the boxes and click Generate Token.
+
+Now, you will need to make a new file in the parent directory titled .env. In it, include the following line of code:
+```
+exports.apiKey = 'YOUR_API_KEY_HERE';
+```
+
+## Technologies Used
+
+_Node.js, Gulp, Bower, SASS. JShint_
+
 
 
 ### Legal
